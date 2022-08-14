@@ -1,0 +1,13 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+.container {
+  width: 92.8125%;
+  height: 87.159%;
+  border-radius: 8px;
+  outline: 1px solid $lines;
+  background-color: $primary-two;
+  color: $secondary-one;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

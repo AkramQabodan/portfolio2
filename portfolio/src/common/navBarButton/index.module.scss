@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+.container {
+  padding: 17px 31px 17px 32px;
+  border-right: 1px solid $lines;
+  cursor: pointer;
+  position: relative;
+  &:hover .item {
+    color: $secondary-four;
+  }
+  &:hover ::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: $accent-one;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.contactMe {
+  margin-left: auto;
+  border-radius: 0 8px 0 0;
+  border-left: 1px solid $lines;
+  border-right: 0px solid $lines;
+}

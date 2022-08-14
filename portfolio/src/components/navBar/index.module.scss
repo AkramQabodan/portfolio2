@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+.container {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  outline: 1px solid $lines;
+  display: flex;
+  font-size: $lables-text;
+  .name {
+    min-width: 17.45%;
+    outline: 1px solid $lines;
+    padding: 17.6px 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
