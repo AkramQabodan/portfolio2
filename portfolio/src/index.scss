@@ -24,3 +24,8 @@ a {
   height: 100%;
   @include flexCenter;
 }
+@media (max-width: 1200px) {
+  #root {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.container {
+  width: 502px;
+  min-height: 182px;
+  border: 1px solid $lines;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: $body-color;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+  @include flexCenter;
+  justify-content: start;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

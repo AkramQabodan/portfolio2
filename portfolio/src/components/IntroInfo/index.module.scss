@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: $secondary-fifth;
+  .hi {
+    font-weight: 450;
+    font-size: $lables-text;
+    line-height: 1.5rem;
+  }
+  .name {
+    font-weight: 400;
+    font-size: $headline-text;
+    line-height: 5.063rem;
+  }
+  .job {
+    font-weight: 450;
+    font-size: $subheadline-text;
+    line-height: 2.625rem;
+    color: $secondary-three;
+  }
+  .comment {
+    margin-top: 81.75px;
+    color: $secondary-one;
+  }
+  .gitHub {
+    margin-top: 10px;
+  }
+  .blue {
+    color: $secondary-three;
+  }
+  .green {
+    color: $accent-two;
+  }
+  .orange {
+    color: $accent-three;
+  }
+}
