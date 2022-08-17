@@ -1,16 +1,16 @@
+import { Outlet } from "react-router";
 import IntroComponentAnimation from "../../common/animation/componentIntro/IntroComponentAnimation";
-import CodeSnippetContainer from "../../components/hello/codesnippetContainer";
-import IntroInfo from "../../components/hello/IntroInfo";
+import AboutMeNav from "../../components/aboutMe/navBar";
 import styles from "./index.module.scss";
 
-const HelloPage = () => {
+const AboutMePage = () => {
   return (
     <IntroComponentAnimation isVisible={true}>
       <div className={styles.container}>
-        <IntroInfo />
-        <CodeSnippetContainer />
+        <AboutMeNav />
+        <Outlet />
       </div>
     </IntroComponentAnimation>
   );
 };
-export default HelloPage;
+export default AboutMePage;

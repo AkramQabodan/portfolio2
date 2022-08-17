@@ -1,0 +1,11 @@
+@import "../../mixins.scss";
+.container {
+  width: 243px;
+  height: 100%;
+  @include outline;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

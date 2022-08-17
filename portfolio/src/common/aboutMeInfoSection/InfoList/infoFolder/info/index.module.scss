@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 12.6px;
+  cursor: pointer;
+  .icon {
+    min-height: 14.6px;
+    min-width: 16.22px;
+    background-image: url("../../../../../assets/icons/info.svg");
+  }
+  .text {
+    margin-left: 8.28px;
+    margin-right: 5px;
+  }
+}

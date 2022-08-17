@@ -3,6 +3,10 @@ import NavBar from "./components/navBar";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer";
 import HelloPage from "./pages/hello";
+import AboutMePage from "./pages/aboutMe";
+import Hobby from "./pages/aboutMe/hobby";
+import Personal from "./pages/aboutMe/personal";
+import Professional from "./pages/aboutMe/professional";
 
 function App() {
   return (
@@ -11,6 +15,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HelloPage />} />
         <Route path="/_hello" element={<HelloPage />} />
+        <Route path="/_about-me" element={<AboutMePage />}>
+          <Route path="hobby" element={<Hobby />} />
+          <Route path="personal" element={<Personal />} />
+          <Route path="professional" element={<Professional />} />
+        </Route>
       </Routes>
       <Footer />
     </div>

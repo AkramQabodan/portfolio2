@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import CodeSnippet from "../../common/codeSnippet";
+import CodeSnippet from "../../../common/codeSnippet";
 import styles from "./index.module.scss";
 
 const CodeSnippetContainer = () => {

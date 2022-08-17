@@ -1,0 +1,30 @@
+@import "../../../../mixins.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  .folder {
+    display: flex;
+    align-items: center;
+    .arrow {
+      width: 7.78px;
+      height: 12.73px;
+      background-image: url("../../../../assets/icons/rightArrow.svg");
+      @include BG-Center-Cover-noRepeat;
+      cursor: pointer;
+      @include flexCenter;
+    }
+    .folder {
+      width: 14.44px;
+      height: 13px;
+      background-image: url("../../../../assets/icons/folder1.svg");
+      @include BG-Center-Cover-noRepeat;
+      cursor: pointer;
+      margin-left: 13.11px;
+      @include flexCenter;
+    }
+    .text {
+      margin-left: 8.92px;
+    }
+  }
+}

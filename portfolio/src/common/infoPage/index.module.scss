@@ -1,0 +1,36 @@
+@import "../../mixins.scss";
+.container {
+  width: calc(100% - 244px);
+  height: 100%;
+  @include outline;
+
+  display: flex;
+  flex-direction: column;
+  .pageName {
+    @include outline;
+    height: 40.6px;
+    width: 218.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14.25px;
+    padding-right: 12.13px;
+    margin-bottom: 1px;
+    .exit {
+      width: 18px;
+      height: 18px;
+      background-image: url("../../assets/icons/X.svg");
+      @include BG-Center-Cover-noRepeat;
+      cursor: pointer;
+    }
+  }
+  .main {
+    width: 48.44%;
+    height: calc(100% - 41.6px);
+    @include outline;
+    word-break: keep-all;
+    word-wrap: break-word;
+    padding: 20px;
+    line-height: 1.688rem;
+  }
+}

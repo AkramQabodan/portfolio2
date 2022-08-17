@@ -1,0 +1,47 @@
+@import "../../mixins.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding-left: 14.5px;
+    height: 40.6px;
+    cursor: pointer;
+    @include outline;
+    .icon {
+      width: 8.5px;
+      height: 6px;
+      background-image: url("../../assets/icons/arrowDownWhite.svg");
+      @include BG-Center-Cover-noRepeat;
+      margin-right: 11.08px;
+    }
+    .info {
+      font-weight: 400;
+      font-size: $lables-text;
+      color: $secondary-four;
+    }
+  }
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .msgIcon {
+    height: 14.6px;
+    width: 16.22px;
+    background-image: url("../../assets/icons/message.svg");
+    @include BG-Center-Cover-noRepeat;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  .phoneIcon {
+    @extend .msgIcon;
+    background-image: url("../../assets/icons/phone.svg");
+  }
+  .textContact {
+    font-size: 0.8rem;
+  }
+}

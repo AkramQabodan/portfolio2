@@ -1,0 +1,12 @@
+@import "../../mixins.scss";
+.container {
+  width: 24px;
+  height: 24px;
+  @include BG-Center-Cover-noRepeat;
+  cursor: pointer;
+  opacity: 0.4;
+  margin-bottom: 33px;
+  &:hover {
+    opacity: 1;
+  }
+}

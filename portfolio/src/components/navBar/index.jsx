@@ -6,10 +6,10 @@ const NavBar = () => {
     <nav className={styles.container}>
       <span className={styles.name}>akram-khaled-ali</span>
       <ul className={styles.links}>
-        <NavBarButton text={"_hello"} />
-        <NavBarButton text={"_about-me"} />
-        <NavBarButton text={"_projects"} />
-        <NavBarButton text={"_contact-me"} />
+        <NavBarButton to={"_hello"} text={"_hello"} />
+        <NavBarButton to={"_about-me/professional"} text={"_about-me"} />
+        <NavBarButton to={"_projects"} text={"_projects"} />
+        <NavBarButton to={"_contact-me"} text={"_contact-me"} />
       </ul>
     </nav>
   );
