@@ -6,7 +6,14 @@ const Hobby = () => {
   const infoArr = [
     {
       folderName: "interests",
-      items: ["GYM", "football", "padel tennis", "video games"],
+      items: [
+        "gym",
+        "football",
+        "padel-tennis",
+        "video-games",
+        "animals",
+        "anime",
+      ],
     },
   ];
   return (
