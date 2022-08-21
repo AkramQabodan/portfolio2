@@ -24,6 +24,7 @@ function App() {
           <Route path="personal" element={<Personal />} />
           <Route path="professional" element={<Professional />} />
         </Route>
+        <Route path="*" element={<HelloPage />} />
       </Routes>
       <Footer />
     </div>
