@@ -11,10 +11,14 @@ const IntroInfo = () => {
       </span>
       <p className={styles.gitHub}>
         <span className={styles.blue}>const</span>{" "}
-        <span className={styles.green}>githubLink</span> =
-        <span className={styles.orange}>
-          “github.com/AkramQabodan/portfolio2.git”
-        </span>
+        <span className={styles.green}>githubLink</span> ={" "}
+        <a
+          target="_blank"
+          href="https://github.com/AkramQabodan/portfolio2"
+          className={styles.orange}
+        >
+          “github.com/AkramQabodan”
+        </a>
       </p>
     </div>
   );
