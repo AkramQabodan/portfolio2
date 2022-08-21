@@ -2,6 +2,7 @@
 .container {
   padding: 17px 31px 17px 32px;
   border-right: 1px solid $lines;
+  font-size: 1rem;
   cursor: pointer;
   position: relative;
   &:hover .item {
@@ -23,4 +24,9 @@
   border-radius: 0 8px 0 0;
   border-left: 1px solid $lines;
   border-right: 0px solid $lines;
+}
+@media (max-width: 1200px) {
+  .container {
+    font-size: 0.8rem;
+  }
 }

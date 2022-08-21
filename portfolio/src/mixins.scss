@@ -12,3 +12,13 @@
 @mixin outline {
   outline: 1px solid $lines;
 }
+@mixin scrollBar {
+  &::-webkit-scrollbar {
+    width: 18.5px;
+    @include outline;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $secondary-one;
+    width: 18.5px;
+  }
+}

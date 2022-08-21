@@ -9,9 +9,8 @@ const InfoFolder = ({ text, items, bg }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.folder}>
+      <div onClick={onClickHandler} className={styles.folderContainer}>
         <div
-          onClick={onClickHandler}
           style={{ transform: `${opened ? "rotate(90deg)" : "rotate(0)"}` }}
           className={styles.arrow}
         ></div>

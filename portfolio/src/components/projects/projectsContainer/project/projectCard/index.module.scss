@@ -1,0 +1,49 @@
+@import "../../../../../mixins.scss";
+@import "../../../../../variables.scss";
+.container {
+  width: 370.35px;
+  height: 314.82px;
+  border-radius: 15px;
+  @include outline;
+  outline: 1px solid #1e2d3d;
+  .figure {
+    height: 145.44px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    outline: 1px solid #1e2d3d;
+    position: relative;
+    .img {
+      outline: 1px solid #1e2d3d;
+      border-radius: 15px 15px 0 0;
+      width: 100%;
+      height: 100%;
+    }
+    .techIcon {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      background-image: url("../../../../../assets/icons/reactBG.svg");
+      top: 19px;
+      right: 17.35px;
+      @include BG-Center-Cover-noRepeat;
+      border-radius: 2px;
+    }
+  }
+  .details {
+    width: 100%;
+    height: calc(100% - 145.44px);
+    background-color: $primary-three;
+    padding: 24px 31px 31.5px 31px;
+    .text {
+      margin-bottom: 21.82px;
+    }
+    .viewMore {
+      border-radius: 8px;
+      color: $secondary-four;
+      background-color: $button;
+      border: none;
+      cursor: pointer;
+      padding: 12px;
+    }
+  }
+}

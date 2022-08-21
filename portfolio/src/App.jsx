@@ -7,6 +7,8 @@ import AboutMePage from "./pages/aboutMe";
 import Hobby from "./pages/aboutMe/hobby";
 import Personal from "./pages/aboutMe/personal";
 import Professional from "./pages/aboutMe/professional";
+import ProjectsPage from "./pages/projects";
+import ContactMePage from "./pages/contactMe";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HelloPage />} />
         <Route path="/_hello" element={<HelloPage />} />
+        <Route path="/_projects" element={<ProjectsPage />} />
+        <Route path="/_contact-me" element={<ContactMePage />} />
         <Route path="/_about-me" element={<AboutMePage />}>
           <Route path="hobby" element={<Hobby />} />
           <Route path="personal" element={<Personal />} />

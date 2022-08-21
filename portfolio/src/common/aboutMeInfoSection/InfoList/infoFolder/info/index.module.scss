@@ -1,3 +1,4 @@
+@import "../../../../../variables.scss";
 .container {
   display: flex;
   align-items: center;
@@ -11,5 +12,8 @@
   .text {
     margin-left: 8.28px;
     margin-right: 5px;
+    &:hover {
+      color: $secondary-four;
+    }
   }
 }

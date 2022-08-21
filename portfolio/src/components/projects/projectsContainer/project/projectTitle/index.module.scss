@@ -1,0 +1,10 @@
+@import "../../../../../variables.scss";
+.project {
+  color: $secondary-six;
+  font-weight: 700;
+  margin-bottom: 14.79px;
+  .name {
+    font-weight: 450;
+    color: $secondary-one;
+  }
+}

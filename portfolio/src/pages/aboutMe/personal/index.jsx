@@ -1,6 +1,7 @@
 import styles from "./index.module.scss";
 import IntroComponentAnimation from "../../../common/animation/componentIntro/IntroComponentAnimation";
 import SideMenu from "../../../common/sideMenu";
+import InfoPage from "../../../common/infoPage";
 const Personal = () => {
   const infoArr = [
     { folderName: "education", items: ["high-school", "university"] },
@@ -15,6 +16,7 @@ const Personal = () => {
     <IntroComponentAnimation isVisible={true}>
       <div className={styles.container}>
         <SideMenu infoArr={infoArr} />
+        <InfoPage />
       </div>
     </IntroComponentAnimation>
   );

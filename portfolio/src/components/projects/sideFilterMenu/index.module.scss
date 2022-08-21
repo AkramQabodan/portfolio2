@@ -1,0 +1,29 @@
+@import "../../../mixins.scss";
+@import "../../../variables.scss";
+.container {
+  width: 311px;
+  height: 100%;
+  @include outline;
+  display: flex;
+  flex-direction: column;
+  .title {
+    display: flex;
+    align-items: center;
+    padding-left: 14.5px;
+    height: 40.6px;
+    cursor: pointer;
+    @include outline;
+    .icon {
+      width: 8.5px;
+      height: 6px;
+      background-image: url("../../../assets/icons/arrowDownWhite.svg");
+      @include BG-Center-Cover-noRepeat;
+      margin-right: 11.08px;
+    }
+    .info {
+      font-weight: 400;
+      font-size: $lables-text;
+      color: $secondary-four;
+    }
+  }
+}

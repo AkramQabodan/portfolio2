@@ -1,0 +1,34 @@
+@import "../../../mixins.scss";
+.container {
+  flex: 1;
+  height: 100%;
+  @include outline;
+  margin-left: 2px;
+  overflow-y: scroll;
+  font-weight: 450;
+  font-size: 1rem;
+  @include flexCenter;
+  @include scrollBar;
+  padding: 30px;
+  color: #5565e8;
+  min-width: 380px;
+  word-break: break-all;
+  white-space: pre-wrap;
+
+  .p {
+    height: 100%;
+  }
+  .grey {
+    color: #607b96;
+  }
+  .pink {
+    color: #c98bdf;
+  }
+  .orange {
+    color: #fea55f;
+  }
+  .number {
+    left: -10px;
+    position: relative;
+  }
+}

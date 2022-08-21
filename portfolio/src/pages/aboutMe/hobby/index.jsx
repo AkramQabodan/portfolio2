@@ -1,4 +1,5 @@
 import IntroComponentAnimation from "../../../common/animation/componentIntro/IntroComponentAnimation";
+import InfoPage from "../../../common/infoPage";
 import SideMenu from "../../../common/sideMenu";
 
 import styles from "./index.module.scss";
@@ -20,6 +21,7 @@ const Hobby = () => {
     <IntroComponentAnimation isVisible={true}>
       <div className={styles.container}>
         <SideMenu infoArr={infoArr} title={"Interest"} />
+        <InfoPage />
       </div>
     </IntroComponentAnimation>
   );

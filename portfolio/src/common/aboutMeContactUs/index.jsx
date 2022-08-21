@@ -13,7 +13,7 @@ const AboutMeContactUs = () => {
           style={{ transform: opened ? "rotate(0deg)" : "rotate(-90deg)" }}
           className={styles.icon}
         ></div>
-        <h3 className={styles.info}>Contact Me</h3>
+        <h3 className={styles.info}>Contacts</h3>
       </div>
       {opened ? (
         <>

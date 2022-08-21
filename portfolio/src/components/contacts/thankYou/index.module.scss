@@ -1,0 +1,36 @@
+@import "../../../mixins.scss";
+@import "../../../variables.scss";
+.container {
+  width: calc(50% - 155px);
+  height: 100%;
+  @include flexCenter;
+  @include outline;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .h1 {
+      color: $secondary-four;
+      font-weight: 450;
+      font-size: 1.625rem;
+      margin-bottom: 10px;
+    }
+    .message {
+      max-width: 382px;
+      margin-bottom: 37px;
+    }
+    .button {
+      width: 163px;
+      height: 38px;
+      @include flexCenter;
+      color: $secondary-four;
+      font-size: 0.875rem;
+      background-color: $button;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

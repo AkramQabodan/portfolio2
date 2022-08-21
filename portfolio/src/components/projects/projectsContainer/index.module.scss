@@ -1,0 +1,14 @@
+@import "../../../mixins.scss";
+.container {
+  width: calc(100% - 311px);
+  height: 100%;
+  padding: 115.18px 127.65px;
+  overflow-y: scroll;
+  @include scrollBar;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370.35px, 1fr));
+  gap: 50px 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}

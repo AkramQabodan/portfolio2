@@ -1,17 +1,20 @@
 @import "../../../../mixins.scss";
+@import "../../../../variables.scss";
 .container {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-  .folder {
+  .folderContainer {
     display: flex;
     align-items: center;
+    cursor: pointer;
     .arrow {
+      cursor: pointer;
       width: 7.78px;
       height: 12.73px;
       background-image: url("../../../../assets/icons/rightArrow.svg");
       @include BG-Center-Cover-noRepeat;
-      cursor: pointer;
+
       @include flexCenter;
     }
     .folder {
@@ -25,6 +28,9 @@
     }
     .text {
       margin-left: 8.92px;
+      &:hover {
+        color: $secondary-four !important;
+      }
     }
   }
 }

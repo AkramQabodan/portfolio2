@@ -1,0 +1,40 @@
+@import "../../../../../variables.scss";
+@import "../../../../../mixins.scss";
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 24px;
+  margin-bottom: 18.64px;
+  .checkBox {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: $secondary-one;
+    margin-right: 24px;
+    appearance: none;
+    background-color: transparent;
+    font: inherit;
+    color: currentColor;
+    border: 1.5px solid currentColor;
+    border-radius: 0.15em;
+  }
+  .checkBoxChecked {
+    background-image: url("../../../../../assets/icons/Check.svg");
+    @include BG-Center-Cover-noRepeat;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    @include BG-Center-Cover-noRepeat;
+    @include flexCenter;
+    margin-right: 10px;
+    opacity: 0.4;
+  }
+  .iconActive {
+    opacity: 1;
+  }
+  .text {
+    color: $secondary-four;
+  }
+}
