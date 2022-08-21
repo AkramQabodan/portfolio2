@@ -11,7 +11,6 @@ const ContactMePage = () => {
   const [email, setEmail] = useState("");
   const [textArea, setTextArea] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
-  console.log(formSubmitted);
   return (
     <IntroComponentAnimation isVisible={true}>
       <div className={styles.container}>

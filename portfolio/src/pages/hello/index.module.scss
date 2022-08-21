@@ -8,3 +8,8 @@
   background-repeat: no-repeat;
   background-position: right 0% top 10%;
 }
+@media (max-width: 901px) {
+  .container {
+    padding: 27px;
+  }
+}

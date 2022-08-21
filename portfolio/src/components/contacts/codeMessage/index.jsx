@@ -4,7 +4,6 @@ const CodeMessage = ({ name, email, message }) => {
   const year = date.getFullYear();
   const day = date.getDate();
   const month = date.getMonth();
-  console.log(year, month, day);
   return (
     <div className={styles.container}>
       <p className={styles.p}>

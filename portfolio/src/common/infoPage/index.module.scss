@@ -4,7 +4,6 @@
   width: calc(100% - 244px);
   height: 100%;
   @include outline;
-
   display: flex;
   flex-direction: column;
   .pageName {
@@ -41,6 +40,14 @@
     &::-webkit-scrollbar-thumb {
       background: $secondary-one;
       width: 18.5px;
+    }
+  }
+}
+@media (max-width: 901px) {
+  .container {
+    width: 100%;
+    .main {
+      width: 100%;
     }
   }
 }

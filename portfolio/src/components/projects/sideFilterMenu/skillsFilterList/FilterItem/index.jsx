@@ -7,7 +7,7 @@ const FilterItem = ({ text, bg, onClick }) => {
   const { checkedReact, checkedJavaScript, checkedCss } = useContext(
     FilteredProjectsContext
   );
-  console.log("hi");
+
   useEffect(() => {
     if (text === "react.js") setChecked(checkedReact);
     if (text === "javascript") {

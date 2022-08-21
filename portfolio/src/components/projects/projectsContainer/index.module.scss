@@ -12,3 +12,17 @@
   align-items: center;
   justify-items: center;
 }
+@media (max-width: 901px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: unset;
+    align-items: unset;
+    padding: 0;
+    overflow: unset;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

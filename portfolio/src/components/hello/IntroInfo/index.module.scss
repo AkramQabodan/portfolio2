@@ -37,3 +37,12 @@
     color: $accent-three;
   }
 }
+@media (max-width: 901px) {
+  .container {
+    .job {
+      color: #43d9ad;
+      font-weight: 450;
+      font-size: 20px;
+    }
+  }
+}

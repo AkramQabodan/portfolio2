@@ -3,3 +3,8 @@
   flex-direction: column;
   width: 370.35px;
 }
+@media (max-width: 901px) {
+  .container {
+    width: 80%;
+  }
+}

@@ -32,3 +32,8 @@
     position: relative;
   }
 }
+@media (max-width: 901px) {
+  .container {
+    display: none;
+  }
+}

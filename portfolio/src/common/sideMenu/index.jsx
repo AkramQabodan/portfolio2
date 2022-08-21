@@ -4,12 +4,10 @@ import IntroComponentAnimation from "../animation/componentIntro/IntroComponentA
 import styles from "./index.module.scss";
 const SideMenu = ({ infoArr, title }) => {
   return (
-    <IntroComponentAnimation isVisible={true}>
-      <div className={styles.container}>
-        <AboutMeInfoSection title={title} infoArr={infoArr} />
-        <AboutMeContactUs />
-      </div>
-    </IntroComponentAnimation>
+    <div className={styles.container}>
+      <AboutMeInfoSection title={title} infoArr={infoArr} />
+      <AboutMeContactUs />
+    </div>
   );
 };
 export default SideMenu;
