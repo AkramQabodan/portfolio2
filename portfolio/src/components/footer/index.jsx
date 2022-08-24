@@ -7,7 +7,7 @@ import instagram from "../../assets/icons/instagram-fill.svg";
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <span className={styles.findMe}>find me in:</span>
+      <span className={styles.findMe}>find me on:</span>
       <FooterIcon
         icon={LinkedIn}
         link="https://www.linkedin.com/in/akram-qabodan-0772701b7/"

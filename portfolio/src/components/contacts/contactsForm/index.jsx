@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./index.module.scss";
+import emailjs from "@emailjs/browser";
 
 const ContactsForm = ({
   setName,
@@ -19,6 +20,7 @@ const ContactsForm = ({
   const [showNameWarning, setShowNameWarning] = useState(false);
   const [showEmailWarning, setshowEmailWarning] = useState(false);
   const [showTextAreaWarning, setShowTextAreaWarning] = useState(false);
+  const form = useRef();
   const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const checkName = (name) => {
     return name.trim() !== "";
@@ -54,6 +56,21 @@ const ContactsForm = ({
     e.preventDefault();
     let isValid = checkFormValidation();
     isValid ? setFormSubmitted(true) : setFormSubmitted(false);
+    emailjs
+      .sendForm(
+        "service_pdv5pr5",
+        "template_d43dtb8",
+        form.current,
+        "gaBuxa5SVu7EfRJKE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   const onChangeHandlerName = (e) => {
     setName(e.target.value);
@@ -75,7 +92,7 @@ const ContactsForm = ({
     <div className={styles.container}>
       <header className={styles.pageName}>contacts</header>
       <div className={styles.formContainer}>
-        <form onSubmit={onSubmitHandler} className={styles.form}>
+        <form ref={form} onSubmit={onSubmitHandler} className={styles.form}>
           <label className={styles.label} htmlFor="name">
             _name:
           </label>
@@ -87,6 +104,7 @@ const ContactsForm = ({
             onBlur={() => {
               setNameTouched(true);
             }}
+            name="name"
             value={name}
           />
 
@@ -103,6 +121,7 @@ const ContactsForm = ({
               setEmailTouched(true);
             }}
             className={styles.inputText}
+            name="email"
             id="email"
             type="email"
             value={email}
@@ -122,6 +141,7 @@ const ContactsForm = ({
             }}
             className={styles.textArea}
             id="message"
+            name="message"
             type="text"
             value={textArea}
           />
