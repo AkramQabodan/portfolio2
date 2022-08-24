@@ -40,7 +40,7 @@ const CodeMessage = ({ name, email, message }) => {
         <span className={styles.grey}>7</span> date
         <span className={styles.grey}>:</span>{" "}
         <span className={styles.orange}>
-          "{year},{month},{day}"
+          "{year},{month + 1},{day}"
         </span>
         <span className={styles.grey}>,</span>
         <br />
